@@ -71,7 +71,7 @@ while game_running == True:
       for char in words:
         sleep(0) 
         print(char, end='', flush=True)
-    
+  
     if player["health"] <= 25:
       os.system('clear')
       type(pyfiglet.figlet_format("The Mighty Hero"))
@@ -180,6 +180,7 @@ while game_running == True:
               monster_won = False
               if player["health"] <= 25:
                 clear()
+                type(pyfiglet.figlet_format("The Mighty Hero"))
                 print("---" * 7)
                 print(colored(player_name + " has " + str(player["health"]) + " health", "red"))
                 print(monster_name2 + " has " + str(monster["health"]) + " health")
@@ -190,6 +191,7 @@ while game_running == True:
                 print("3) Exit Game")
               elif player["health"] <= 50:
                 clear()
+                type(pyfiglet.figlet_format("The Mighty Hero"))
                 print("---" * 7)
                 print(colored(player_name + " has " + str(player["health"]) + " health", "yellow"))
                 print(monster_name2 + " has " + str(monster["health"]) + " health")
@@ -200,6 +202,7 @@ while game_running == True:
                 print("3) Exit Game")
               else:
                 clear()
+                type(pyfiglet.figlet_format("The Mighty Hero"))
                 print("---" * 7)
                 print(colored(player_name + " has " + str(player["health"]) + " health", "green"))
                 print(monster_name2 + " has " + str(monster["health"]) + " health")
@@ -307,6 +310,7 @@ while game_running == True:
                     monster_won = False
                     if player["health"] <= 25:
                       os.system('clear')
+                      type(pyfiglet.figlet_format("The Mighty Hero"))
                       print("---" * 7)
                       print(colored(player_name + " has " + str(player["health"]) + " health", "red"))
                       print(boss_name + " has " + str(monster["health"]) + " health")
@@ -317,6 +321,7 @@ while game_running == True:
                       print("3) Exit Game")
                     elif player["health"] <= 50:
                       os.system('clear')
+                      type(pyfiglet.figlet_format("The Mighty Hero"))
                       print("---" * 7)
                       print(colored(player_name + " has " + str(player["health"]) + " health", "yellow"))
                       print(boss_name + " has " +str(monster["health"]) + " health")
@@ -327,6 +332,7 @@ while game_running == True:
                       print("3) Exit Game")
                     else:
                       clear()
+                      type(pyfiglet.figlet_format("The Mighty Hero"))
                       print("---" * 7)
                       print(colored(player_name + " has " + str(player["health"]) + " health", "green"))
                       print(boss_name + " has " +str(monster["health"]) + " health")
@@ -417,6 +423,7 @@ while game_running == True:
                       while boss_level == True:
                         if player["health"] <= 25:
                           os.system('clear')
+                          type(pyfiglet.figlet_format("The Mighty Hero"))
                           print("---" * 7)
                           print(colored(player_name + " has " + str(player["health"]) + " health", "red"))
                           print(boss_name + " has " + str(monster["health"]) + " health")
@@ -427,6 +434,7 @@ while game_running == True:
                           print("3) Exit Game")
                         elif player["health"] <= 50:
                           os.system('clear')
+                          type(pyfiglet.figlet_format("The Mighty Hero"))
                           print("---" * 7)
                           print(colored(player_name + " has " + str(player["health"]) + " health", "yellow"))
                           print(boss_name + " has " +str(monster["health"]) + " health")
@@ -437,6 +445,7 @@ while game_running == True:
                           print("3) Exit Game")
                         else:
                           clear()
+                          type(pyfiglet.figlet_format("The Mighty Hero"))
                           print("---" * 7)
                           print(colored(player_name + " has " + str(player["health"]) + " health", "green"))
                           print(boss_name + " has " +str(monster["health"]) + " health")
