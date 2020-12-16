@@ -15,3 +15,5 @@ Let me know any suggestions down below and if this gets enough support I will co
 **Write Questions Down Below in the Comments**
 Once a question is asked, I will reply to the comment with the answer. I will also post all questions and answers here: https://monster-game-v12-faq.colepete.repl.co/ 
 Please check this page BEFORE you write a question in the comments
+
+**You Must Give Me Credit If You Are Going To Use Any Of this Code**
