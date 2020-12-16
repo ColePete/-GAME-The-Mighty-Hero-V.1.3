@@ -8,6 +8,14 @@ version = "1.4.2"
 
 [[package]]
 category = "main"
+description = "Pure-python FIGlet implementation"
+name = "pyfiglet"
+optional = false
+python-versions = "*"
+version = "0.8.post1"
+
+[[package]]
+category = "main"
 description = "ANSII Color formatting for output in terminal."
 name = "termcolor"
 optional = false
@@ -15,12 +23,16 @@ python-versions = "*"
 version = "1.1.0"
 
 [metadata]
-content-hash = "d37c3e3ba568babd6d178c318ea47190251206db76d819b85a3f84d2cf53d493"
+content-hash = "093c6eefa57fa0224143c63e3dd50122c101721db9d94566ad976649f696b6b2"
 python-versions = "^3.8"
 
 [metadata.files]
 colored = [
     {file = "colored-1.4.2.tar.gz", hash = "sha256:056fac09d9e39b34296e7618897ed1b8c274f98423770c2980d829fd670955ed"},
+]
+pyfiglet = [
+    {file = "pyfiglet-0.8.post1-py2.py3-none-any.whl", hash = "sha256:d555bcea17fbeaf70eaefa48bb119352487e629c9b56f30f383e2c62dd67a01c"},
+    {file = "pyfiglet-0.8.post1.tar.gz", hash = "sha256:c6c2321755d09267b438ec7b936825a4910fec696292139e664ca8670e103639"},
 ]
 termcolor = [
     {file = "termcolor-1.1.0.tar.gz", hash = "sha256:1d6d69ce66211143803fbc56652b41d73b4a400a2891d7bf7a1cdf4c02de613b"},

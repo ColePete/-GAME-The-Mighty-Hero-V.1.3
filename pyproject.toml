@@ -8,6 +8,7 @@ authors = ["repl.it user <replituser@example.com>"]
 python = "^3.8"
 colored = "^1.4.2"
 termcolor = "^1.1.0"
+pyfiglet = "^0.8.post1"
 
 [tool.poetry.dev-dependencies]
 

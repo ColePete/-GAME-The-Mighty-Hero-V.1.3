@@ -1,4 +1,4 @@
-# [GAME] Monster Fighting Game
+# [GAME] The Might Hero 
 
 
 **Directions**
@@ -8,6 +8,8 @@ In this game, you will go against different monsters and defeat them to save you
 **Weapon Selection Information**
 FYI when you choose a weapon, the sword increases attack by 4 but decreases the heal by 3. On the other hand, the bow and arrow decreases your attack by 2 , but boosts your heal by 5.
 
+**"Where Are The High Scores?"**
+High scores and FAQ can be located on one of my other repls here https://monster-game-v12-faq.colepete.repl.co/  (FYI, the button at the bottom doesn't work yet) 
 
 **SUGGESTIONS ARE VERY HELPFUL**
 Let me know any suggestions down below and if this gets enough support I will continue to make updates with your ideas. 

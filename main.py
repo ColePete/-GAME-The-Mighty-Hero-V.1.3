@@ -5,8 +5,15 @@ import os
 from termcolor import colored
 import random
 import time
+from time import sleep
 from collections import Counter 
+import pyfiglet
 count = 0 
+def type(words):
+  for char in words:
+    sleep(0.009)
+    print(char, end='', flush=True)
+
 
 weapon = {"close range": "Sword", "long range": "Bow and Arrow"}
 
@@ -14,14 +21,14 @@ def clear(seconds=0):
   time.sleep(seconds)
   os.system('clear')
 
-
-player_moves = 0
 third_level = True
 
 monster_names = ["Brady", "Jack", "Charlie", "Jude", "Austin"]
 monster_names2 = ["Brady", "Jack", "Charlie", "Jude", "Austin"]
 boss_names = ["Brady", "Jack", "Charlie", "Jude", "Austin"]
 monster_name = random.choice(monster_names)
+type(pyfiglet.figlet_format("The Mighty Hero"))
+sleep(2)
 while game_running == True:
   new_round = True
 
@@ -37,6 +44,7 @@ while game_running == True:
 
   player_name = input("---" * 7 + "\nEnter PLAYER Name: ")
   clear()
+  
   while select_weapon == True:
     clear(1)
     player_weapon = input("---" * 7 + "\nPlease Select Weapon\n1) Sword\n2) Bow and Arrow\n")
@@ -59,16 +67,24 @@ while game_running == True:
   while new_round == True:
     player_won = False
     monster_won = False
+    def type(words):
+      for char in words:
+        sleep(0) 
+        print(char, end='', flush=True)
+    
     if player["health"] <= 25:
       os.system('clear')
+      type(pyfiglet.figlet_format("The Mighty Hero"))
       print("---" * 7 + "\n" + colored(player_name + " has " + str(player["health"]) +" health", "red") + "\n" + monster_name1 + " has " +str(monster["health"]) + " health\n" + "---" * 7 + "\nPlease Select Action\n1) Attack\n2) Heal\n3) Exit Game")
 
     elif player["health"] <= 50:
       os.system('clear')
+      type(pyfiglet.figlet_format("The Mighty Hero"))
       print("---" * 7 + "\n" + colored(player_name + " has " + str(player["health"]) +" health", "yellow") + "\n" + monster_name1 + " has " +  str(monster["health"]) + " health\n" + "---" * 7 +  "\nPlease Select Action\n1) Attack\n2) Heal\n3) Exit Game")
 
     else:
       os.system('clear')
+      type(pyfiglet.figlet_format("The Mighty Hero"))
       print("---" * 7 + "\n" + colored(player_name + " has " + str(player["health"]) +" health", "green") + "\n" + monster_name1 + " has " +  str(monster["health"]) + " health\n" + "---" * 7 +  "\nPlease Select Action\n1) Attack\n2) Heal\n3) Exit Game")
     player_choice = int(input())
 
@@ -372,7 +388,7 @@ while game_running == True:
                       elif player_choice == "1":
                         boss_level = True
                         player = {"attack": 20,"heal": 28,"health": 100}
-                        monster = {"attack": 24, "health": 300}
+                        monster = {"attack": 24, "health": 600} 
                       select_weapon = True
                       while select_weapon == True:
                         clear(1)
@@ -385,13 +401,13 @@ while game_running == True:
                           print("---" * 7)
                           print("You have chosen a sword as your weapon")
                           player = {"attack": 14,"heal": 12,"health": 100}
-                          monster = {"attack": 16,"health": 100,"name": random_name}
+                          monster = {"attack": 16,"health": 400,"name": random_name}
                           select_weapon = False
                         elif player_weapon == "2":
                           print("---" * 7)
                           print("You have chosen a bow and arrow as your weapon")
                           player = {"attack": 8,"heal": 20,"health": 100}
-                          monster = {"attack": 16,"health": 100,"name": random_name}
+                          monster = {"attack": 16,"health": 400,"name": random_name}
                           select_weapon = False
                         else:
                           print("***" * 7)
@@ -441,8 +457,7 @@ while game_running == True:
                               print(colored("You defeated " + monster_name + " and saved the village!"),"green") 
                               print("Thanks for playing!")
                               print("Your total moves was") 
-                              print(colored(count),"red") 
-                              print("moves")  
+                              print(colored ("Your total movers were " + (str(count)) + " moves","green"))   
                               print("---" * 7)
                               print("Please Select Action")
                               print("1) Restart Game")
