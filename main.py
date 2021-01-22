@@ -47,7 +47,7 @@ while game_running == True:
   
   while select_weapon == True:
     clear(1)
-    player_weapon = input("---" * 7 + "\nPlease Select Weapon\n1) Sword\n2) Bow and Arrow\n")
+    player_weapon = input("---" * 7 + "\nPlease Select Weapon\n1) Sword         |(attack: 14, heal: 12)\n2) Bow and Arrow |(attack: 8, heal: 20)\n3) Spear         |(attack: 9, heal: 15)\n4) Axe           |(attack: 18, heal: 9)\n")
     if player_weapon == "1":
       print("---" * 7 + "\nYou have chosen a sword as your weapon")
       player = {"attack": 14, "heal": 12, "health": 100}
@@ -57,6 +57,18 @@ while game_running == True:
       print("You have chosen a bow and arrow as your weapon")
       player = {"attack": 8, "heal": 20, "health": 100}
       select_weapon = False
+
+    elif player_weapon == "3":
+      print("---" * 7)
+      print("You have chosen a spear as your weapon")
+      player = {"attack": 9, "heal": 15, "health": 100}
+      select_weapon = False
+
+    elif player_weapon == "4": 
+      print("---" * 7)
+      print("You have chosen an axe as your weapon")
+      player = {"attack": 18, "heal": 9, "health": 100}
+      select_weapon = False  
     else:
       print("***" * 7)
       print("ERR: Invalid Input")
@@ -155,10 +167,9 @@ while game_running == True:
           clear()
           while weapon_select == True:
             clear(1)
-            print("---" * 7)
-            print("Please Select Weapon")
-            print("1) Sword")
-            print("2) Bow and Arrow\n")
+            
+            print("---" * 7 + "\nPlease Select Weapon\n1) Sword         |(attack: 14, heal: 12)\n2) Bow and Arrow |(attack: 8, heal: 20)\n3) Spear         |(attack: 9, heal: 15)\n4) Axe           |(attack: 18, heal: 9)\n")
+            
             player_weapon = input()
             if player_weapon == "1":
               print("---" * 7)
@@ -172,6 +183,17 @@ while game_running == True:
                 monster = {"attack": 10, "health": 100}
                 weapon_select = False
                 second_level = False
+            elif player_weapon == "3":
+              print("---" * 7)
+              print("You have chosen a spear as your weapon")
+              player = {"attack": 9, "heal": 15, "health": 100}
+              select_weapon = False
+
+            elif player_weapon == "4": 
+              print("---" * 7)
+              print("You have chosen an axe as your weapon")
+              player = {"attack": 18, "heal": 9, "health": 100}
+              select_weapon = False 
             else:
                   print("Invalid Input")
             clear(1.5)
@@ -281,10 +303,9 @@ while game_running == True:
                   clear()
                   while weapon_select == True:
                     os.system('clear')
-                    print("---" * 7)
-                    print("Please Select Weapon")
-                    print("1) Sword")
-                    print("2) Bow and Arrow")
+                   
+                    print("---" * 7 + "\nPlease Select Weapon\n1) Sword         |(attack: 14, heal: 12)\n2) Bow and Arrow |(attack: 8, heal: 20)\n3) Spear         |(attack: 9, heal: 15)\n4) Axe           |(attack: 18, heal: 9)\n")
+                    
                     player_weapon = input()
                     if player_weapon == "1":
                       print("---" * 7)
@@ -298,6 +319,17 @@ while game_running == True:
                       monster = {"attack": 10, "health": 100}
                       weapon_select = False
                       second_level = False
+                    elif player_weapon == "3":
+                      print("---" * 7)
+                      print("You have chosen a spear as your weapon")
+                      player = {"attack": 9, "heal": 15, "health": 100}
+                      select_weapon = False
+
+                    elif player_weapon == "4": 
+                      print("---" * 7)
+                      print("You have chosen an axe as your weapon")
+                      player = {"attack": 18, "heal": 9, "health": 100}
+                      select_weapon = False 
                     else:
                       print("Invalid Input")
                   clear()
@@ -398,10 +430,8 @@ while game_running == True:
                       select_weapon = True
                       while select_weapon == True:
                         clear(1)
-                        print("---" * 7)
-                        print("Please Select Weapon")
-                        print("1) Sword")
-                        print("2) Bow and Arrow")
+                        
+                        print("---" * 7 + "\nPlease Select Weapon\n1) Sword         |(attack: 14, heal: 12)\n2) Bow and Arrow |(attack: 8, heal: 20)\n3) Spear         |(attack: 9, heal: 15)\n4) Axe           |(attack: 18, heal: 9)\n")
                         player_weapon = input()
                         if player_weapon == "1":
                           print("---" * 7)
@@ -415,6 +445,17 @@ while game_running == True:
                           player = {"attack": 8,"heal": 20,"health": 100}
                           monster = {"attack": 16,"health": 400,"name": random_name}
                           select_weapon = False
+                        elif player_weapon == "3":
+                          print("---" * 7)
+                          print("You have chosen a spear as your weapon")
+                          player = {"attack": 9, "heal": 15, "health": 100}
+                          select_weapon = False
+
+                        elif player_weapon == "4": 
+                          print("---" * 7)
+                          print("You have chosen an axe as your weapon")
+                          player = {"attack": 18, "heal": 9, "health": 100}
+                          select_weapon = False 
                         else:
                           print("***" * 7)
                           print("ERR: Invalid Input")
@@ -464,9 +505,8 @@ while game_running == True:
                               os.system('clear')
                               print("---" * 7)
                               print(colored("You defeated " + monster_name + " and saved the village!"),"green") 
-                              print("Thanks for playing!")
-                              print("Your total moves was") 
-                              print(colored ("Your total movers were " + (str(count)) + " moves","green"))   
+                              print("Thanks for playing!") 
+                              print(colored ("Your total moves was " + (str(count)) + " moves","green"))   
                               print("---" * 7)
                               print("Please Select Action")
                               print("1) Restart Game")
